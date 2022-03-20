@@ -25,8 +25,9 @@ while(unreached.length>0){
         }
       }
   }
-    print("reached",reached.length);
-    print("unreached",unreached.length);
+   // print("reached",reached.length);
+    //print("unreached",unreached.length);
+  strokeWeight(window.innerHeight/250);
     line(unreached[uj].x,unreached[uj].y,reached[ri].x,reached[ri].y);
     reached.push(unreached[uj]);
     unreached.splice(uj,1);
@@ -37,7 +38,7 @@ while(unreached.length>0){
 
   for(let i=0;i<co.length;i++)
     {
-      ellipse(co[i].x,co[i].y,10,10);
+      ellipse(co[i].x,co[i].y,window.innerHeight/50,window.innerHeight/50);
     }
 }
 
